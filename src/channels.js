@@ -126,8 +126,8 @@ const channels = [
     logo: '🇻🇪',
     country: 'Venezuela',
     category: 'Generalista',
-    url: 'https://mdstrm.com/live-stream/58d1aed1b6318eec59278b0b?jsapi=true&autoplay=true&access_token=mYpI8Yw6TgcgFwrhl5y3RRstBq5UJSxZdWmLjPUhpgYfZ0MDCJd0xwkb2J2sLpUVFschuChgc9C&controls_bar[showFullscreen]=true',
-    type: 'iframe',
+    url: 'https://setp-televen-ssai-mslv4-open.akamaized.net/hls/live/2107128/televen/index.m3u8',
+    type: 'hls',
     live: true,
   },
   {
@@ -136,7 +136,8 @@ const channels = [
     logo: '🟡',
     country: 'Colombia',
     category: 'Deportes',
-    url: 'https://www.noticiascaracol.com/golcaracol/partidos',
+    // Solo transmite en vivo durante partidos de fútbol
+    url: 'https://mdstrm.com/live-stream/58d1aed1b6318eec59278b0b?jsapi=true&autoplay=true&access_token=mYpI8Yw6TgcgFwrhl5y3RRstBq5UJSxZdWmLjPUhpgYfZ0MDCJd0xwkb2J2sLpUVFschuChgc9C&controls_bar[showFullscreen]=true',
     type: 'iframe',
     live: true,
   },
