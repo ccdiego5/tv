@@ -96,6 +96,18 @@ const channels = [
     type: 'hls',
     live: true,
   },
+
+  // --- Deportes ---
+  {
+    id: 10,
+    name: 'Real Madrid TV',
+    logo: '⚽',
+    country: 'España',
+    category: 'Deportes',
+    url: 'https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8',
+    type: 'hls',
+    live: true,
+  },
 ];
 
 export default channels;
