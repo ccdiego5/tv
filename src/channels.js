@@ -97,6 +97,18 @@ const channels = [
     live: true,
   },
 
+  // --- Italia ---
+  {
+    id: 12,
+    name: 'RAI 1',
+    logo: '🇮🇹',
+    country: 'Italia',
+    category: 'Generalista',
+    url: 'https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8',
+    type: 'hls',
+    live: true,
+  },
+
   // --- Deportes ---
   {
     id: 10,
