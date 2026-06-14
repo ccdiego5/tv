@@ -97,15 +97,15 @@ const channels = [
     live: true,
   },
 
-  // --- Venezuela (requiere VPN) ---
+  // --- Venezuela (requiere VPN Venezuela) ---
   {
     id: 13,
     name: 'Televen',
     logo: '🇻🇪',
     country: 'Venezuela',
     category: 'Generalista',
-    url: 'https://setp-televen-ssai-mslv4-open.akamaized.net/hls/live/2107128/televen/index.m3u8',
-    type: 'hls',
+    url: 'https://app.televen.com/player/live?channelId=20000841&categoryId=0&channelNumber=1',
+    type: 'external',
     live: true,
   },
 ];
