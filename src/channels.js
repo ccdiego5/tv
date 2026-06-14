@@ -85,52 +85,6 @@ const channels = [
     live: true,
   },
 
-  // --- À Punt ---
-  {
-    id: 9,
-    name: 'À Punt',
-    logo: '🟠',
-    country: 'España',
-    category: 'Regional',
-    url: 'http://92.176.119.180:2095/play/a17d',
-    type: 'hls',
-    live: true,
-  },
-
-  // --- Venezuela / Colombia ---
-  {
-    id: 13,
-    name: 'Televen',
-    logo: '🇻🇪',
-    country: 'Venezuela',
-    category: 'Generalista',
-    url: 'https://mdstrm.com/live-stream/58d1aed1b6318eec59278b0b?jsapi=true&autoplay=true&access_token=mYpI8Yw6TgcgFwrhl5y3RRstBq5UJSxZdWmLjPUhpgYfZ0MDCJd0xwkb2J2sLpUVFschuChgc9C&controls_bar[showFullscreen]=true',
-    type: 'iframe',
-    live: true,
-  },
-  {
-    id: 14,
-    name: 'Gol Caracol',
-    logo: '⚽',
-    country: 'Colombia',
-    category: 'Deportes',
-    url: 'https://www.noticiascaracol.com/golcaracol/partidos',
-    type: 'iframe',
-    live: true,
-  },
-
-  // --- Italia ---
-  {
-    id: 12,
-    name: 'RAI 1',
-    logo: '🇮🇹',
-    country: 'Italia',
-    category: 'Generalista',
-    url: 'https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8',
-    type: 'hls',
-    live: true,
-  },
-
   // --- Deportes ---
   {
     id: 10,
@@ -150,6 +104,40 @@ const channels = [
     category: 'Deportes',
     url: 'https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8',
     type: 'hls',
+    live: true,
+  },
+
+  // --- Italia ---
+  {
+    id: 12,
+    name: 'RAI 1',
+    logo: '🇮🇹',
+    country: 'Italia',
+    category: 'Generalista',
+    url: 'https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8',
+    type: 'hls',
+    live: true,
+  },
+
+  // --- Venezuela / Colombia (requiere VPN) ---
+  {
+    id: 13,
+    name: 'Televen',
+    logo: '🇻🇪',
+    country: 'Venezuela',
+    category: 'Generalista',
+    url: 'https://mdstrm.com/live-stream/58d1aed1b6318eec59278b0b?jsapi=true&autoplay=true&access_token=mYpI8Yw6TgcgFwrhl5y3RRstBq5UJSxZdWmLjPUhpgYfZ0MDCJd0xwkb2J2sLpUVFschuChgc9C&controls_bar[showFullscreen]=true',
+    type: 'iframe',
+    live: true,
+  },
+  {
+    id: 14,
+    name: 'Gol Caracol',
+    logo: '🟡',
+    country: 'Colombia',
+    category: 'Deportes',
+    url: 'https://www.noticiascaracol.com/golcaracol/partidos',
+    type: 'iframe',
     live: true,
   },
 ];
