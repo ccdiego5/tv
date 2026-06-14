@@ -4,7 +4,23 @@ import Hls from 'hls.js'
 // Persistir volumen globalmente entre canales
 const globalVolume = { value: 0.8, muted: false }
 
+function IframePlayer({ url }) {
+  return (
+    <div className="w-full h-full bg-black">
+      <iframe
+        src={url}
+        className="w-full h-full border-0"
+        allowFullScreen
+        allow="autoplay; fullscreen; encrypted-media"
+        referrerPolicy="no-referrer"
+      />
+    </div>
+  )
+}
+
 export default function VideoPlayer({ channel }) {
+  if (channel?.type === 'iframe') return <IframePlayer url={channel.url} />
+
   const videoRef    = useRef(null)
   const hlsRef      = useRef(null)
   const hideTimer   = useRef(null)
