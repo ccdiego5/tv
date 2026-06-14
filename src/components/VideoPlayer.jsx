@@ -18,8 +18,37 @@ function IframePlayer({ url }) {
   )
 }
 
+function ExternalPlayer({ channel }) {
+  return (
+    <div className="w-full h-full bg-black flex flex-col items-center justify-center gap-6 px-6 text-center">
+      <div className="text-6xl">{channel.logo}</div>
+      <div>
+        <div className="text-white text-xl font-bold mb-1">{channel.name}</div>
+        <div className="text-gray-400 text-sm">{channel.country} · {channel.category}</div>
+      </div>
+      <p className="text-gray-400 text-sm max-w-xs">
+        Este canal no puede reproducirse embebido por restricciones del sitio web.
+      </p>
+      <a
+        href={channel.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 bg-[#e63946] hover:bg-[#c1121f] text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/>
+          <line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Ver en nueva pestaña
+      </a>
+    </div>
+  )
+}
+
 export default function VideoPlayer({ channel }) {
   if (channel?.type === 'iframe') return <IframePlayer url={channel.url} />
+  if (channel?.type === 'external') return <ExternalPlayer channel={channel} />
 
   const videoRef    = useRef(null)
   const hlsRef      = useRef(null)

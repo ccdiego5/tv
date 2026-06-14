@@ -87,16 +87,6 @@ const channels = [
 
   // --- Deportes ---
   {
-    id: 10,
-    name: 'Real Madrid TV',
-    logo: '⚽',
-    country: 'España',
-    category: 'Deportes',
-    url: 'https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/master.m3u8',
-    type: 'hls',
-    live: true,
-  },
-  {
     id: 11,
     name: 'Red Bull TV',
     logo: '🐂',
@@ -107,19 +97,7 @@ const channels = [
     live: true,
   },
 
-  // --- Italia ---
-  {
-    id: 12,
-    name: 'RAI 1',
-    logo: '🇮🇹',
-    country: 'Italia',
-    category: 'Generalista',
-    url: 'https://dash2.antik.sk/live/test_rai_uno_tizen/playlist.m3u8',
-    type: 'hls',
-    live: true,
-  },
-
-  // --- Venezuela / Colombia (requiere VPN) ---
+  // --- Venezuela (requiere VPN) ---
   {
     id: 13,
     name: 'Televen',
@@ -128,17 +106,6 @@ const channels = [
     category: 'Generalista',
     url: 'https://setp-televen-ssai-mslv4-open.akamaized.net/hls/live/2107128/televen/index.m3u8',
     type: 'hls',
-    live: true,
-  },
-  {
-    id: 14,
-    name: 'Gol Caracol',
-    logo: '🟡',
-    country: 'Colombia',
-    category: 'Deportes',
-    // Solo transmite en vivo durante partidos de fútbol
-    url: 'https://mdstrm.com/live-stream/58d1aed1b6318eec59278b0b?jsapi=true&autoplay=true&access_token=mYpI8Yw6TgcgFwrhl5y3RRstBq5UJSxZdWmLjPUhpgYfZ0MDCJd0xwkb2J2sLpUVFschuChgc9C&controls_bar[showFullscreen]=true',
-    type: 'iframe',
     live: true,
   },
 ];
