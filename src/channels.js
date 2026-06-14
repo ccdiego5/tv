@@ -24,6 +24,26 @@ const channels = [
   // --- RTVE ---
   {
     id: 3,
+    name: 'La 1',
+    logo: '1️⃣',
+    country: 'España',
+    category: 'Pública',
+    url: 'https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/la1/la1_main_576.m3u8',
+    type: 'hls',
+    live: true,
+  },
+  {
+    id: 4,
+    name: 'La 2',
+    logo: '2️⃣',
+    country: 'España',
+    category: 'Pública',
+    url: 'https://rtvelivestream-rtveplayplus.rtve.es/rtvesec/la2/la2_main_576.m3u8',
+    type: 'hls',
+    live: true,
+  },
+  {
+    id: 5,
     name: 'TVE Internacional',
     logo: '🌍',
     country: 'España',
@@ -33,7 +53,7 @@ const channels = [
     live: true,
   },
   {
-    id: 4,
+    id: 6,
     name: 'Galicia TV Europa',
     logo: '🟦',
     country: 'España',
